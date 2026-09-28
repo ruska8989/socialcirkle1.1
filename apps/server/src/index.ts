@@ -23,5 +23,11 @@ app.use("/api", authMiddleware);
 app.use("/api/relationships", relationships);
 app.use("/api/chats", chats);
 
-const port = Number(process.env.PORT ?? 8080);
-app.listen(port, () => console.log(`server on :${port}`));
+export default app;
+
+// Vercel invokes the default export as a serverless function. Keep the local
+// listener so `npm run dev` continues to work outside Vercel.
+if (!process.env.VERCEL) {
+  const port = Number(process.env.PORT ?? 8080);
+  app.listen(port, () => console.log(`server on :${port}`));
+}

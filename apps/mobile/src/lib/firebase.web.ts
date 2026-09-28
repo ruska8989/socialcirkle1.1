@@ -15,14 +15,13 @@ import {
 
 // ⬇️ Put your Web App config here
 const firebaseConfig = {
-    apiKey: "AIzaSyAAXZw8dSnhAh4OTrC1hpGssvkddn0QDfU",
-    authDomain: "socialcirkle-42d8b.firebaseapp.com",
-    projectId: "socialcirkle-42d8b",
-    storageBucket: "socialcirkle-42d8b.firebasestorage.app",
-    messagingSenderId: "896069729535",
-    appId: "1:896069729535:web:f88b8e547ab7b8dc9a60ca",
-    measurementId: "G-ZRTC4QYDJ0"
-  };
+    apiKey: "AIzaSyCcxMTIxstJ_6kkSNnrWHxig_39K-ngZ-4",
+    authDomain: "socialcirkle1.firebaseapp.com",
+    projectId: "socialcirkle1",
+    storageBucket: "socialcirkle1.firebasestorage.app",
+    messagingSenderId: "491404041626",
+    appId: "1:491404041626:web:204707c4b8e9f2b84d6e23"
+};
 
 const app = getApps().length ? getApp() : initializeApp(firebaseConfig);
 
